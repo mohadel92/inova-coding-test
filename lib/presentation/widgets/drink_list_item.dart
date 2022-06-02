@@ -1,7 +1,4 @@
-
-
 import 'package:flutter/material.dart';
-
 import '../../data/models/drink.dart';
 import '../../helpers/app_colors.dart';
 

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
 import '../../data/models/menu_section.dart';
 import '../../helpers/app_colors.dart';
-
 
 class MenuItem extends StatelessWidget {
   const MenuItem({Key? key, this.menuSection, this.onTap}) : super(key: key);
