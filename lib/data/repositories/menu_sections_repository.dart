@@ -20,7 +20,9 @@ class MenuSectionsRepository implements MenuInterface{
     final menuSections = await menusWebServices.getMenuSections();
       
     
-    return Future.delayed(const Duration(seconds: 2),(() => menuSections.map((section) => MenuSection.fromJson(section)).toList()));
+    return Future.delayed(const Duration(seconds: 2),(() {
+      return menuSections.map((section) => MenuSection.fromJson(section)).toList();
+    }));
   }
 
   

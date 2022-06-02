@@ -58,6 +58,17 @@ class _HomeScreenState extends State<HomeScreen> {
                       );
                     }),
               );
+            } else if (state is MenusSectionsError) {
+              return  Center(
+                
+                child:Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                children:  [
+                  const Icon(Icons.error),
+                  const SizedBox(width: 8,),
+                  Text(state.error),
+                ],
+              ));
             } else {
               return const Center(child: CircularProgressIndicator());
             }
