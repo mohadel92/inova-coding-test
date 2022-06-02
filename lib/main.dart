@@ -14,7 +14,7 @@ class CoffeeShopApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Coffe Shop',
+      title: 'Coffee Shop',
       debugShowCheckedModeBanner: false,
       
       theme: ThemeData(primaryColor: AppColors.purple,
